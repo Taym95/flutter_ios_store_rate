@@ -1,7 +1,7 @@
 name: flutter_ios_store_rate
 description: This plugin exposes the native iOS APIs to ask the user to rate the app.
 version: 0.0.1
-author: Taym95
+author: haddadi.taym@gmail.com
 homepage: https://github.com/Taym95/flutter_ios_store_rate
 
 environment:
