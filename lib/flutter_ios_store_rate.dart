@@ -15,4 +15,8 @@ class FlutterIosStoreRate {
     final String version = await platformVersion;
     return double.parse(version) >= 10.3;
   }
+
+  static void requestReview() {
+    _channel.invokeMethod('requestReview');
+  }
 }

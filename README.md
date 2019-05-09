@@ -1,6 +1,25 @@
 # flutter_ios_store_rate
 
-A new flutter plugin project.
+This plugin exposes the native iOS APIs to ask the user to rate the app.
+
+![IMG_0566 (1)](https://user-images.githubusercontent.com/14943106/57464606-483dd100-727d-11e9-9bbb-8946d406ef75.png)
+
+
+## Usage
+* Add `flutter_ios_store_rate` to your `pubspec.yaml`file.
+* Example:
+
+```
+import'package:flutter_ios_store_rate/flutter_ios_store_rate.dart';
+
+bool isAvailable = await FlutterIosStoreRate.isAvailable;
+  
+if(isAvailable) {
+    FlutterIosStoreRate.requestReview();
+}
+
+```
+
 
 ## Getting Started
 
