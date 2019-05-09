@@ -10,4 +10,9 @@ class FlutterIosStoreRate {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version.replaceAll(new RegExp('iOS '), '');
   }
+
+  static Future<bool> get isAvailable async {
+    final String version = await platformVersion;
+    return double.parse(version) >= 10.3;
+  }
 }
